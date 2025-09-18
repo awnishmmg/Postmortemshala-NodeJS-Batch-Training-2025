@@ -1,0 +1,362 @@
+Basic of DBMS :-
+1. what is data :-
+eg: shankar 
+
+8299502081
+gf password : $%&w1#Aq3$
+1. data is a any raw fact and figure which can be recorded.
+2. data is stored for later use.
+3. data are categories into 2 categories
+1. raw data : no use.
+2. process data -> information
+
+database :- a place where the data is stored.
+data structure :-  how data is organised in RAM.
+Big data :- Huge amount of data starting from terra byte.
+Big data runs on 3 pillars
+1. v : volume : how much size of data is consumed.
+2. v : variety : type of data.
+3. v : velocity : frequency of data(change of data)
+
+data center : place where multiple server are placed in a network
+data ware house :- store room of data.
+we store the data in physical form.
+
+DBMS :a software which can be to read the data,modify the data and delete data and with security and backup is called as 
+DBMS.
+
+Data 2 Types 
+1. Relational : storing data in relations (Tabular)
+Rows and columns
+RDBMS 
+Technology : sql (structure query langauge)
+EF Codd.(IBM) -> SEQUEL -> Register -> Media 
+remove all vowels -> sql 
+
+Database Example:-
+1. oracle : sql 
+2. mysql : sql 
+3. postgreSQL : sql
+4. SQLlite : sql
+5. MS SQL Server : sql  
+
+Some Terminology used in sql:-
+1. rows : tuple,records
+2. tables : relations
+3. columns : attribute,field name,
+
+tables has some structure.
+
+2. Non Relational
+Data is not stored in form of tables.
+NO SQL (not only sql)
+No Structure or No Schema-les 
+Data store is stored in Objects and Array.
+
+Example:-
+1. mongodb 
+2. dynamodb 
+3. cassendra
+4. firebase or firestore 
+5. Hbase 
+6. Redis 
+7. RabbitMQT
+8. Couchdb 
+9. MemcacheDB
+...
+...
+
+mongodb is runs on server 
+1. Enterprise server : paid.
+2. community server : free
+
+mongodb community server 
+client donwload ----> mongodb server 
+
+
+1. mongodb community server (mongod.exe) 
+	mongodb community server  : Infrastructre as a service(IAAS)
+2. mongodb client 
+	1. GUI : Ready Made Compass.
+	SAAS : software as a service
+		Ready Made buttons,insert,update,delete
+	2. cli : mongosh (mongo shell) (mongosh.exe)
+		you have write command.
+	SAAS : software as a service
+	
+		
+
+
+
+
+
+Introduction to Mongodb :-
+=======================
+1. it is developed using javascript.
+2. Non Relational Database.
+
+in order to connect with any database server :-
+1 ip address : local machine 127.0.0.1 or localhost 
+2. port : 27017
+3. username : Laptop-name
+4. password : 
+5. db name 
+
+by defualt mongodb : connected database test>
+
+Note :-
+Any application runs on the basis of these 4 queries 
+1. C : create the Record (insert)
+2. R : read the record (select)
+3. U : update the record (update)
+4. D : delete the record (delete)
+
+cls : clear screen 
+show databases : to show list of db
+1. config 
+2. local 
+3. admin 
+4. test 
+
+one database can contain mutliple tables.
+
+show tables
+in mongodb we donot have table 
+we have collection.
+show collections 
+
+how to create collection:-
+========================
+db.createCollection('collectionName')
+
+
+Note : In any programming Langauge in entire universe, every programming 
+has only 4 case standard.
+
+sentence :-  my gf name kartina
+1. snake case 
+	1. upper snake case 
+		MY_GF_NAME_KATRINA
+	2. lower snake case
+		 my_gf_name_kartina
+	Eg :php,python,sql 
+	
+2. kebab case 
+	1. upper kebab case 
+		MY-GF-NAME-IS-KATRINA
+	2. lower kebab case 
+		my-gf-name-is-kartina
+		
+		Programming Langauge :
+		CSS 
+3. camel case (mixed = lower+upper)
+		myGfNameKatrina
+		python,java,javascript
+4. pascal case  (mixed = lower+upper)
+		MyGfNameKatrina
+		python,java,javascript,Kotlin
+		
+
+How to drop the collection/table:-
+db.collection.drop()
+eg: db.users.drop()
+
+if you want to create the database:-
+====================================
+use <database>
+
+Atomic database in Mongodb:-
+until and unless minimum one collection does not exist. till then database will not be created.
+
+Note : mongodb support two types statement 
+1. Query statement : space sperated in lower case
+	Eg : use dbname 
+	show tables 
+	show collections 
+	show dbs 
+	show roles
+2. procedure statement
+	These are written in form functions that also in camelcase.
+	
+	
+Types of roles in mongodb :-
+=============================
+1. read : only select the data not write operation (insert,update,delete)
+2. readwrite : can write  (insert,update,delete) data and read the data  (select)
+3. userAdmin : can create the user,modify user, access the grant permission to the user userAdmin has nothing to do with data.
+4. dbAdmin : can perform any operation like create,modify,delete,read 
+collection or data but only valid to the database allowed.
+5. dbOwner : He is Owner of the database.
+
+CRUD in mongodb:-
+==============
+1. insert() : older  used to insert single and multiple record.
+2. insertOne(<object>) :new method insert only single record
+3. insertMany(<Array of object>) : new method insert multiple record.
+
+Note : 
+insert() -> <object> -> insertOne()
+insert() -> <Array of object> -> insertMany()
+
+data structure of single record :-
+single user data :-
+{
+	user_id: 1001,
+	name : "Awnish",
+	age : 15
+}
+
+data structure of the mutiple record :-
+Array of Object :-
+[
+	{
+		user_id: 1001,
+		name : "Awnish",
+		age : 15
+	},
+	{
+		user_id: 1002,
+		name : "hameem",
+		age : 17
+	},
+	{
+		user_id: 1003,
+		name : "shivam",
+		age : 18
+	}
+
+]
+
+How to select All data :-
+========================
+db.collection.find()
+or 
+db.collection.find({})
+
+if you want user data 
+db.users.find()
+ 
+if you want to see product data
+db.product.find()
+
+db.users.find({_id: {$eq :ObjectId('68a2ffbc21024d0c62eec4ad')}})
+
+
+db.users.find({key: {operator :value}})
+=  : $eq 
+!= : $ne 
+> : $gt 
+< : $lt 
+>= :$gte 
+<= : $lte 
+$in : in the list of array
+$nin : not in the list of array 
+
+Mongodb support something which is called keywords = $keyword.
+operators are nothing but $keywords.
+
+difference B/w findOne and find():-
+====================================
+1. findOne() return count = 1 or null 
+1. find() return n or 0 
+
+2. findOne() : does not cursor object 
+2. find() : it return cursor object 
+
+3. findOne() : cannot apply aggregate count.
+3. find() : you can apply aggregate count 
+
+How to delete the Record :-
+========================= 
+deleteOne() 
+deleteMany()
+
+db.collection.deleteOne(<condition>) 
+db.collection.deleteMany(<condition>) 
+db.users.deleteMany({})
+
+How code executes:-
+1. condition -> findOne() or find()
+Note : in case of delete command always use, ObjectId()
+
+How to update the record in mongodb:-
+====================================
+1. update()
+2. updateOne()
+3. updateMany()
+4. upsert() =>  update + insert 
+				if record found then it will be updated.
+				if not it will inserted.
+				
+				
+update syntax :-
+===============
+1. condition of search.
+2. setting new values.
+   $set : keyword to set the value 
+   {$set:{key1:value1,key2:value2:key3:value3....keyn:valuen}}
+   
+ db.collection.updateOne|Many({condition},{$set:{key1:value1,key2:value2:key3:value3....keyn:valuen}})
+ 
+ 
+ [
+	{
+		p_id: 1002,
+		p_name: 'harpic',
+		price: 50,
+		qty: 4,
+		brand: 'dettol'
+  },
+  {
+		p_id: 1003,
+		p_name: 'coffe',
+		price: 30,
+		qty: 10,
+		brand: 'cdc'
+  }
+ ]
+ 
+ 
+   
+
+
+
+
+		
+				
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

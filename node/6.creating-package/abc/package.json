@@ -1,0 +1,22 @@
+{
+    "name": "abc",
+    "version": "1.0.0",
+    "description": "This is awnish Package",
+    "author": {
+        "email": "awnishmmg.a41@gmail.com",
+        "name": "Awnish Kumar",
+        "url": "http://awnish.com"
+    },
+    "license": "MIT",
+    "keywords": [],
+    "repository": {
+        "url": "https://github.com/awnishmmg/abc.git"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "katreena": "echo katreena"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}

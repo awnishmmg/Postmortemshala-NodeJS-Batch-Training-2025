@@ -1,0 +1,29 @@
+# Ignore node_modules in all apps
+**/node_modules/
+
+# Ignore logs everywhere
+**/logs
+**/*.log
+
+# Ignore environment files in any app
+**/.env
+**/.env.* 
+
+# Ignore coverage in any app
+**/coverage/
+**/.nyc_output/
+
+# Ignore dist/build outputs
+**/dist/
+**/build/
+**/.next/
+**/.nuxt/
+**/.svelte-kit/
+**/.angular/
+**/out/
+**/.cache/
+**/public/
+
+# Misc
+.DS_Store
+.vscode/

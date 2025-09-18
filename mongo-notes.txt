@@ -1,0 +1,144 @@
+Our Tech-stack :-
+============
+full stack  = front end + backend 
+
+Any Application has minimum 3 tier architecture :-
+1. presentation logic : front end 
+2. bussines logic  : application core - logic 
+3. database logic  : Queries of database or sql statement.
+backend =  server side technology + database technology
+
+Example of full stack technology :
+1. Java full stack (Pl: java)
+2. .net Full stack (PL: C#(read as seesharp, not seeHash))
+3. python full stack (PL: python)
+	1. Django,flask,DRF(Django Rest Framework),FastApi.
+4. javascript full stack (PL: javascript)
+
+All 3 Tech-stack are of javascript.
+MERN/MEAN/MEVN/MESN
+
+frontEnd : React,Angular,Vue Js ,SvelteJs (PL : js)
+Backend : Server Side Technology + Database Technology
+M : Mongodb : PL:javascript
+N : Node Js : PL:javascript
+
+Node js : is a server side run time environment which 
+enable javascript to run outside the browser.
+in 2008 Google made a engine -> V8 Engine -> Js Server.
+Node Js.
+vanilla Js : a plain javascript without any framework.
+
+Framework of Node Js :-
+1. express
+2. meteor 
+3. koa
+4. fastify 
+5. nest 
+6. Hapi
+
+React is older in terms.
+framework of the React 
+1.Next js 
+2. Remix
+3. UI framework (tailwind,Ant-design)
+
+Framework of Vue Js : Nuxt 
+
+nest 
+next 
+nuxt 
+
+nest vs next vs nuxt
+NodeJs   React  VueJs
+Angular 
+
+Entire web works on the basis client and server architecture:-
+browser (client)----------> Request-------> Server
+server ----> Request ---> accept --> proces -> db connection
+----> information ----> response ---> return ---> client 
+according to os concepts:-
+1. system software or utility software 
+2. application software.
+
+Or software Engineering is basically application software 
+oriented.
+
+There are 5 types of application software :-
+1. CLI or CUI Based app s/w
+	Software which on black and white sceen.
+	1.cmd 
+	2.Linux os, unix os
+	3. BIOS (Basic input output system.)
+	
+	Real time industry :-
+	1. Railway General Ticket
+	
+2. GUI Based App S/w 
+	graphical user interface.
+	for every action there will some interface involved.
+	1. stand alone software or desktop application
+		Install
+		agree or no -> Next -> Next ->Next -> Yes -> Yes -> finish
+	2. Non installable s/w
+	Tally GUI based system installed.
+	
+3. web based app S/w
+	1. Not required to be installed
+	2. Internet and Browser 
+	3. Plateform Independent.
+	
+4. Mobile Based App S/w
+	1. Android (Native) 
+	2. IOS (Native)
+	3. Hybrid App.(ReactNative,Flutter)
+		code base will same and build ios different
+		Android different.
+		it is called cross plateform development.
+
+5. IOT Application (IOT)
+6. cloud based application.
+	cloud computing 
+	1. IAAS : infrastructure as a service.
+	2. PAAS : plateform as a service.
+	3. SAAS : software as a service.
+	4. BAAS : Backend as a service.(firebase)
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+database:-
+=========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
