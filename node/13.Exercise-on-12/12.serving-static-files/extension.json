@@ -1,0 +1,18 @@
+{
+    ".html": {
+        "type": "text/html",
+        "path": "pages/"
+    },
+    ".css": {
+        "type": "text/css",
+        "path": "assets/css/"
+    },
+    ".jpeg": {
+        "type": "image/jpeg",
+        "path": "assets/images/"
+    },
+    ".js": {
+        "type": "text/javascript",
+        "path": "assets/js/"
+    }
+}
