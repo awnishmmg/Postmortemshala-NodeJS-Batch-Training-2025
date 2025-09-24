@@ -1,0 +1,17 @@
+{
+  "name": "1.api-documentation-using-apidocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "node apidoc -i routes -o docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apidoc": "^1.2.0",
+    "express": "^5.1.0"
+  }
+}

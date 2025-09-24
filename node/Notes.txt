@@ -1,0 +1,28 @@
+what is mongoose :-
+mongoose is node js package used to connect our backend node or express application to mongodb database
+
+Node App  (8000)                                             mongodb (Port: 27017)
+                <------------------connect---------------------->
+                            special package 
+                            mongoose
+Express App  (8000)                                             mongodb (Port: 27017)
+                <------------------connect---------------------->
+                            special package 
+                            mongoose
+
+steps:-1
+1. start the mongodb server 
+2. create any database and any collection in mongodb 
+3. install mongoose package 
+    npm install mongoose
+
+    https://www.npmjs.com/package/mongoose/v/7.0.3
+    https://mongoosejs.com/docs/
+
+
+Follow the following steps to connect your application with mongodb :-
+1. import mongoose package 
+2. connect to database 
+3. create the schema 
+4. create the model 
+5. write the Query for insert,update,delete,find,findOne

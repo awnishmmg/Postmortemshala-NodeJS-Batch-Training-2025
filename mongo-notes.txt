@@ -103,31 +103,10 @@ There are 5 types of application software :-
 	2. PAAS : plateform as a service.
 	3. SAAS : software as a service.
 	4. BAAS : Backend as a service.(firebase)
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 database:-
 =========
+
 
 
 

@@ -1,0 +1,11 @@
+{
+  "name": "apidoc-example",
+  "version": "1.0.0",
+  "description": "Example Express API with apidoc",
+  "title": "User API",
+  "url": "http://localhost:3000",
+  "template": {
+    "withCompare": false,
+    "withGenerator": false
+  }
+}
