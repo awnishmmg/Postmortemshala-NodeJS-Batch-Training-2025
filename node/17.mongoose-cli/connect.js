@@ -1,11 +1,11 @@
+require('dotenv').config({quiet:true}); //Environment Variable.
 const mongoose = require('mongoose');
 //Event Listner Based
 
 function connect(){
-
-    const db  = mongoose.createConnection('mongodb://127.0.0.1:27017/company',{
-        useNewUrlParser : true, // New URL Encoding Techqniue.
-        useUnifiedTopology : true, //Topology : Network configuration 
+    const db  = mongoose.createConnection(process.env.MONGO_DB_URI,{
+        // useNewUrlParser : true, // New URL Encoding Techqniue.
+        // useUnifiedTopology : true, //Topology : Network configuration 
         // Star Network, Mesh Network ,circular topology
     });
 

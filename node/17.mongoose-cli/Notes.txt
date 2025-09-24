@@ -74,3 +74,41 @@ Update/One : user
    });
 
 
+Working with environment variable :-
+======================================
+when we were working mongosh we added the path in environment variable.
+adding path,values or any information in environment variable
+gives us the global access.
+meaning you can access it from any where.
+
+generally we make config.json and store all the configuration 
+of application in one place.
+but there is problem with config.json.
+
+1. config.json will be stored in repository. and body can see you database password
+hack.
+2. security issue.
+3. plateform dependency (every operating system may not support)
+4. config.json globally available.
+
+credentials or server information or secret like database paassword ,ip address 
+port we keep in environment variable.
+1. global 
+2. secure 
+3. .env in pushed in github.
+
+In Order to read .env we need a special package 
+package : dotenv
+
+npm install dotenv
+
+
+
+
+
+
+
+
+
+
+

@@ -16,33 +16,55 @@ const UserController = {
        const user = new User(formData);
        user.save().then(function(data){
             console.log('User Created Successfully',data);
+            process.exit()
        }).catch(function(error){
             console.log('User Creation Error',error);
+            process.exit()
        });
-
+       
     },
     selectOne : function(user_id){
 
     User.find({_id:user_id}).then(function(data){
             console.log('User Data',data);
+            process.exit();
        }).catch(function(error){
             console.log('Error Finding the data',error);
+            process.exit();
     });
-
 
     },
     selectAll : function(){
-
          User.find().then(function(data){
             console.log('User Data',data);
+            process.exit();
        }).catch(function(error){
             console.log('Error Finding the data',error);
+            process.exit();
        });
 
     },
-    updateOne : function(){
+    updateOne : function(user_id,updatedData){
+     // old Data and new Data 
+     User.findByIdAndUpdate({_id:user_id},updatedData,{new:true}).then(function(data){
+            console.log('User Data Updated',data);
+            process.exit();
+       }).catch(function(error){
+            console.log('Error Finding the data, cannot update',error);
+            process.exit();
+       });
     },
-    delete: function(){
+    delete: function(user_id){
+
+      User.findByIdAndDelete({_id:user_id}).then(function(data){
+            console.log('User Data Deleted Successfully',data);
+            process.exit();
+       }).catch(function(error){
+            console.log('Error Finding the data',error);
+            process.exit();
+
+    });
+
     }
 }
 

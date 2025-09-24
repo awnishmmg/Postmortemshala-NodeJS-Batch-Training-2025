@@ -1,0 +1,6 @@
+Homework 
+Make a Product Crud Application 
+insert,update,selectOne,selectAll,delete 
+
+Make a Student Crud Application 
+insert,update,selectOne,selectAll,delete 
