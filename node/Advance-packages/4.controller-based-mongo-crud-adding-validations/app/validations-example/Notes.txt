@@ -1,0 +1,19 @@
+express validator is most commonly used library 
+in validating and sanitizing the code.
+we have other packges joi/zoe package for doing the validation.
+
+it is mendatory custom logics are always best when it comes
+to complex logics and bigger applications.
+
+How to install it :-
+npm install express-validator 
+
+How to check the validation Errors:-
+==================================
+const errors = validationErrors(req)
+if(errors.isEmpty()){
+
+}else{
+    //Error 
+}
+

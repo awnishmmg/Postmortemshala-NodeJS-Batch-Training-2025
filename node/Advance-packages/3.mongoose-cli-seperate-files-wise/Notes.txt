@@ -1,0 +1,76 @@
+1 CRUD -> Model -> schema 
+steps :-
+
+Insert :-
+=======
+1. mongoose package connection (connect.js) -> connection will set up automatically.
+
+db.collection.insert()
+db.collection.find()
+db.collection.update()
+db.collection.delete()
+
+Reference : db object 
+insert/create : user 
+=====================
+1. connect() => db Object 
+2. mongoose -> schema 
+3. db -> model -> collection name 
+4. user = new User();
+   user.save().then(function(data){
+    console.log('Record Inserted',data);
+   }).catch(function(error){
+        console.log('Insertion Failed',error);
+   });
+
+select/All : user 
+=====================
+1. connect() => db Object 
+2. mongoose -> schema 
+3. db -> model -> collection name 
+4. user model
+   user.find().then(function(data){
+    console.log('Record found',data);
+   }).catch(function(error){
+        console.log('No Record found',error);
+   });
+
+select/One : user 
+=====================
+1. connect() => db Object 
+2. mongoose -> schema 
+3. db -> model -> collection name 
+4. user model
+   user.find({_id:user_id}).then(function(data){
+    console.log('Record found',data);
+   }).catch(function(error){
+        console.log('No Record found',error);
+   });
+
+
+delete/One : user 
+=====================
+1. connect() => db Object 
+2. mongoose -> schema 
+3. db -> model -> collection name 
+4. user model
+   user.findByIdAndDelete({_id:user_id}).then(function(data){
+    console.log('Record Deleted',data);
+   }).catch(function(error){
+        console.log('No Record found',error);
+   });
+
+
+Update/One : user 
+=====================
+1. connect() => db Object 
+2. mongoose -> schema 
+3. db -> model -> collection name 
+4. user model
+   user.findByIdAndUpdate({_id:user_id},{name:"New Name",age:"new Age"},{new:true}).then(function(data){
+    console.log('Record Updated',data);
+   }).catch(function(error){
+        console.log('No Record found',error);
+   });
+
+
