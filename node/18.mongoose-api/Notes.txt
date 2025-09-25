@@ -1,0 +1,14 @@
+Here we are using package 
+1. express 
+2. mongoose : connectivity with database and node 
+3. dotenv : env read 
+4. body-parser : rest api postman post/put/patch data accept.
+5. express-validator : validation
+
+
+npm install express 
+npm install ls exppress 
+npm install mongoose
+npm install dotenv
+npm install body-parser
+nom install express-validator
