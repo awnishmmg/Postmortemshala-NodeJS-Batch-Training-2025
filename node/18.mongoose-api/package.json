@@ -5,16 +5,17 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "local" : "npx nodemon app.js"
+    "local": "npx nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-    "dependencies": { 
-       "express" : "latest",
-       "express-validator" : "latest",
-       "mongoose" : "latest",
-       "dotenv" : "latest",
-       "body-parser": "latest"
-    }
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-validator": "latest",
+    "mongoose": "latest"
+  }
 }
